@@ -1,0 +1,1212 @@
+22:51:07.343 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:51:08.002 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:51:08.254 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123"}
+
+22:51:08.858 [main] DEBUG com.intuit.karate - response time in milliseconds: 602
+1 < 200
+1 < Content-Type: application/json
+1 < X-Cloud-Trace-Context: 03e14adae80387c920d2e855b889859f
+1 < Date: Wed, 09 Aug 2023 03:51:07 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+22:51:08.874 [main] ERROR com.intuit.karate - classpath:usercases/feature/user.feature:13
+And match response contains jsonResponse
+match failed: CONTAINS
+  $ | actual does not contain expected (STRING:STRING)
+  '""
+'
+  'Auth_token:'
+
+classpath:usercases/feature/user.feature:13
+22:51:08.891 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:51:08.897 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser","password":"pass123"}
+
+22:51:09.203 [main] DEBUG com.intuit.karate - response time in milliseconds: 305
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: d643d052a962826f34ec90c2e12727b8
+1 < Date: Wed, 09 Aug 2023 03:51:08 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:51:09.211 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:51:09.218 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123"}
+
+22:51:09.559 [main] DEBUG com.intuit.karate - response time in milliseconds: 340
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 6cdd164972c44e6e6a4eba59af876abd
+1 < Date: Wed, 09 Aug 2023 03:51:08 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+"Auth_token: dGVzdHVzZXJfMzE2OTIxNTM="
+
+
+22:51:09.566 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:51:09.570 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 47
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_33","password":"pass123"}
+
+22:51:09.880 [main] DEBUG com.intuit.karate - response time in milliseconds: 309
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 921c3fd9e7877d5d86326416d2455d5b
+1 < Date: Wed, 09 Aug 2023 03:51:09 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"User does not exist."}
+
+
+22:51:09.887 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:51:09.892 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 49
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123456"}
+
+22:51:10.188 [main] DEBUG com.intuit.karate - response time in milliseconds: 295
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 2d9351d4310e05fc52f5d6adbcd26b97;o=1
+1 < Date: Wed, 09 Aug 2023 03:51:09 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+22:59:56.276 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:59:56.930 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:59:56.988 [main] INFO  com.intuit.karate - [print] created response is:  Auth_token: 
+22:59:57.172 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123"}
+
+22:59:57.718 [main] DEBUG com.intuit.karate - response time in milliseconds: 544
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 67b8e2837faa8ecbaae22d144f407083
+1 < Date: Wed, 09 Aug 2023 03:59:56 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:59:57.731 [main] ERROR com.intuit.karate - classpath:usercases/feature/user.feature:14
+And match response contains jsonResponse
+match failed: CONTAINS
+  $ | data types don't match (MAP:STRING)
+  {"errorMessage":"This user already exist."}
+  'Auth_token:'
+
+
+classpath:usercases/feature/user.feature:14
+22:59:57.744 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:59:57.748 [main] INFO  com.intuit.karate - [print] created exist is:  {
+  "errorMessage": "This user already exist."
+}
+ 
+22:59:57.750 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser","password":"pass123"}
+
+22:59:58.041 [main] DEBUG com.intuit.karate - response time in milliseconds: 290
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 13cdcd0f9a43de9aef8d7ec226fbdcd6
+1 < Date: Wed, 09 Aug 2023 03:59:57 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:59:58.052 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:59:58.059 [main] INFO  com.intuit.karate - [print] login response is:  Auth_token: 
+22:59:58.060 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123"}
+
+22:59:58.384 [main] DEBUG com.intuit.karate - response time in milliseconds: 322
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: bbc315c45d48c969d884bebbebf4a0cc
+1 < Date: Wed, 09 Aug 2023 03:59:57 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+"Auth_token: dGVzdHVzZXJfMzE2OTIxNTM="
+
+
+22:59:58.391 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:59:58.395 [main] INFO  com.intuit.karate - [print] login incorrect user response is:  {
+  "errorMessage": "User does not exist."
+}
+ 
+22:59:58.398 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 47
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_33","password":"pass123"}
+
+22:59:58.772 [main] DEBUG com.intuit.karate - response time in milliseconds: 374
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 8e0c922821a6434c804302dbb1d330c9
+1 < Date: Wed, 09 Aug 2023 03:59:57 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"User does not exist."}
+
+
+22:59:58.788 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:59:58.792 [main] INFO  com.intuit.karate - [print] login incorrect pass response is:  {
+  "errorMessage": "Wrong password."
+}
+ 
+22:59:58.794 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 49
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123456"}
+
+22:59:59.106 [main] DEBUG com.intuit.karate - response time in milliseconds: 311
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 50c88b10377a6c41ed3803806ed8fddc
+1 < Date: Wed, 09 Aug 2023 03:59:58 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+23:05:01.091 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:05:01.734 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:05:01.790 [main] INFO  com.intuit.karate - [print] created response is:  Auth_token: 
+23:05:01.975 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123"}
+
+23:05:02.594 [main] DEBUG com.intuit.karate - response time in milliseconds: 616
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 673ca8e0f4d366749e1255fddf713b48
+1 < Date: Wed, 09 Aug 2023 04:05:01 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+23:05:02.612 [main] ERROR com.intuit.karate - classpath:usercases/feature/user.feature:14
+And match response contains jsonResponse111111111
+js failed:
+>>>>
+01: jsonResponse111111111
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "jsonResponse111111111" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:usercases/feature/user.feature:14
+23:05:02.624 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:05:02.628 [main] INFO  com.intuit.karate - [print] created exist is:  {
+  "errorMessage": "This user already exist."
+}
+ 
+23:05:02.631 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser","password":"pass123"}
+
+23:05:02.962 [main] DEBUG com.intuit.karate - response time in milliseconds: 328
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: d84ee9caa43c063352e73fca5d538971
+1 < Date: Wed, 09 Aug 2023 04:05:02 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+23:05:02.978 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:05:02.984 [main] INFO  com.intuit.karate - [print] login response is:  Auth_token: 
+23:05:02.985 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123"}
+
+23:05:03.409 [main] DEBUG com.intuit.karate - response time in milliseconds: 422
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 9a4068557256a7af09254a6e36097387
+1 < Date: Wed, 09 Aug 2023 04:05:02 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+"Auth_token: dGVzdHVzZXJfMzE2OTIxNTM="
+
+
+23:05:03.416 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:05:03.420 [main] INFO  com.intuit.karate - [print] login incorrect user response is:  {
+  "errorMessage": "User does not exist."
+}
+ 
+23:05:03.422 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 47
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_33","password":"pass123"}
+
+23:05:03.806 [main] DEBUG com.intuit.karate - response time in milliseconds: 383
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 0d9cfeaf24095e2755a1ef27b9a69315
+1 < Date: Wed, 09 Aug 2023 04:05:02 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"User does not exist."}
+
+
+23:05:03.815 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:05:03.819 [main] INFO  com.intuit.karate - [print] login incorrect pass response is:  {
+  "errorMessage": "Wrong password."
+}
+ 
+23:05:03.821 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 49
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123456"}
+
+23:05:04.710 [main] DEBUG com.intuit.karate - response time in milliseconds: 888
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 19216f9bcc6d0999dd7c870f1ded1c53
+1 < Date: Wed, 09 Aug 2023 04:05:03 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+23:06:07.581 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:06:08.251 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:06:08.306 [main] INFO  com.intuit.karate - [print] created response is:  Auth_token: 
+23:06:08.497 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123"}
+
+23:06:08.972 [main] DEBUG com.intuit.karate - response time in milliseconds: 473
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: b65f1a06053d8cb753d891349f530ac6;o=1
+1 < Date: Wed, 09 Aug 2023 04:06:08 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+23:06:08.990 [main] ERROR com.intuit.karate - classpath:usercases/feature/user.feature:14
+And match response contains jsonResponse1
+match failed: CONTAINS
+  $ | data types don't match (MAP:STRING)
+  {"errorMessage":"This user already exist."}
+  'Auth_token:'
+
+
+classpath:usercases/feature/user.feature:14
+23:06:09.006 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:06:09.010 [main] INFO  com.intuit.karate - [print] created exist is:  {
+  "errorMessage": "This user already exist."
+}
+ 
+23:06:09.011 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser","password":"pass123"}
+
+23:06:09.322 [main] DEBUG com.intuit.karate - response time in milliseconds: 308
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 664c0cbbdd0305f335ec38414ca75fa0
+1 < Date: Wed, 09 Aug 2023 04:06:08 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+23:06:09.331 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:06:09.337 [main] INFO  com.intuit.karate - [print] login response is:  Auth_token: 
+23:06:09.339 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123"}
+
+23:06:09.657 [main] DEBUG com.intuit.karate - response time in milliseconds: 317
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 78a93d0006336aff2e450ada601c3448
+1 < Date: Wed, 09 Aug 2023 04:06:08 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+"Auth_token: dGVzdHVzZXJfMzE2OTIxNTM="
+
+
+23:06:09.663 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:06:09.668 [main] INFO  com.intuit.karate - [print] login incorrect user response is:  {
+  "errorMessage": "User does not exist."
+}
+ 
+23:06:09.669 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 47
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_33","password":"pass123"}
+
+23:06:09.975 [main] DEBUG com.intuit.karate - response time in milliseconds: 304
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 6bd26dea9b16b1a35b1af19c43ed7bfb
+1 < Date: Wed, 09 Aug 2023 04:06:09 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"User does not exist."}
+
+
+23:06:09.983 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:06:09.989 [main] INFO  com.intuit.karate - [print] login incorrect pass response is:  {
+  "errorMessage": "Wrong password."
+}
+ 
+23:06:09.990 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 49
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123456"}
+
+23:06:10.282 [main] DEBUG com.intuit.karate - response time in milliseconds: 292
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: a3327dafa2c162025a6bff011e10cb00
+1 < Date: Wed, 09 Aug 2023 04:06:09 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+23:12:29.377 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:12:30.009 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:12:30.070 [main] INFO  com.intuit.karate - [print] created response is:  Auth_token: 
+23:12:30.257 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123"}
+
+23:12:30.850 [main] DEBUG com.intuit.karate - response time in milliseconds: 590
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 5d84a8ca06adafe0eacc69a49aa42b57
+1 < Date: Wed, 09 Aug 2023 04:12:29 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+23:12:30.865 [main] ERROR com.intuit.karate - classpath:usercases/feature/user.feature:14
+And match response contains jsonResponse1
+match failed: CONTAINS
+  $ | data types don't match (MAP:STRING)
+  {"errorMessage":"This user already exist."}
+  'Auth_token:'
+
+
+classpath:usercases/feature/user.feature:14
+23:12:30.880 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:12:30.885 [main] INFO  com.intuit.karate - [print] created exist is:  {
+  "errorMessage": "This user already exist."
+}
+ 
+23:12:30.886 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser","password":"pass123"}
+
+23:12:31.210 [main] DEBUG com.intuit.karate - response time in milliseconds: 323
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 51d6c5783a55ed11c1ce68668c7c024b
+1 < Date: Wed, 09 Aug 2023 04:12:30 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+23:12:31.225 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:12:31.229 [main] INFO  com.intuit.karate - [print] login response is:  Auth_token: 
+23:12:31.232 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123"}
+
+23:12:31.591 [main] DEBUG com.intuit.karate - response time in milliseconds: 359
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: ab043ea39f1bbbe580bb5a6355300dd7
+1 < Date: Wed, 09 Aug 2023 04:12:30 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+"Auth_token: dGVzdHVzZXJfMzE2OTIxNTQ="
+
+
+23:12:31.598 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:12:31.603 [main] INFO  com.intuit.karate - [print] login incorrect user response is:  {
+  "errorMessage": "User does not exist."
+}
+ 
+23:12:31.606 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 47
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_33","password":"pass123"}
+
+23:12:32.094 [main] DEBUG com.intuit.karate - response time in milliseconds: 487
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 56ad1b9688dbf84929c52267543b7041
+1 < Date: Wed, 09 Aug 2023 04:12:31 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"User does not exist."}
+
+
+23:12:32.101 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:12:32.105 [main] INFO  com.intuit.karate - [print] login incorrect pass response is:  {
+  "errorMessage": "Wrong password."
+}
+ 
+23:12:32.107 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 49
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123456"}
+
+23:12:32.386 [main] DEBUG com.intuit.karate - response time in milliseconds: 278
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 318589118abb1668326bac5db62fd0cb
+1 < Date: Wed, 09 Aug 2023 04:12:31 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+23:14:12.136 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:14:12.785 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:14:12.843 [main] INFO  com.intuit.karate - [print] created response is:  Auth_token: 
+23:14:13.025 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123"}
+
+23:14:13.390 [main] DEBUG com.intuit.karate - response time in milliseconds: 362
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 7eecfafb4e2d352980d463c440f333df;o=1
+1 < Date: Wed, 09 Aug 2023 04:14:12 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+23:14:13.405 [main] ERROR com.intuit.karate - classpath:usercases/feature/user.feature:14
+And match response contains jsonResponse1
+match failed: CONTAINS
+  $ | data types don't match (MAP:STRING)
+  {"errorMessage":"This user already exist."}
+  'Auth_token:'
+
+
+classpath:usercases/feature/user.feature:14
+23:14:13.418 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:14:13.422 [main] INFO  com.intuit.karate - [print] created exist is:  {
+  "errorMessage": "This user already exist."
+}
+ 
+23:14:13.423 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser","password":"pass123"}
+
+23:14:13.779 [main] DEBUG com.intuit.karate - response time in milliseconds: 354
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 59e227a9e76e0719312822a4d63b90c5
+1 < Date: Wed, 09 Aug 2023 04:14:12 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+23:14:13.794 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:14:13.799 [main] INFO  com.intuit.karate - [print] login response is:  Auth_token: 
+23:14:13.801 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123"}
+
+23:14:14.202 [main] DEBUG com.intuit.karate - response time in milliseconds: 399
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 050e0050621c08d0c50518c2f476a46f
+1 < Date: Wed, 09 Aug 2023 04:14:13 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+"Auth_token: dGVzdHVzZXJfMzE2OTIxNTQ="
+
+
+23:14:14.210 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:14:14.214 [main] INFO  com.intuit.karate - [print] login incorrect user response is:  {
+  "errorMessage": "User does not exist."
+}
+ 
+23:14:14.216 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 47
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_33","password":"pass123"}
+
+23:14:14.558 [main] DEBUG com.intuit.karate - response time in milliseconds: 336
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 5e5ce54d6c08c65133b8e5d57037b943
+1 < Date: Wed, 09 Aug 2023 04:14:13 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"User does not exist."}
+
+
+23:14:14.568 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:14:14.572 [main] INFO  com.intuit.karate - [print] login incorrect pass response is:  {
+  "errorMessage": "Wrong password."
+}
+ 
+23:14:14.574 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 49
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123456"}
+
+23:14:14.924 [main] DEBUG com.intuit.karate - response time in milliseconds: 349
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 300c577022067ed718119524dd212cc3
+1 < Date: Wed, 09 Aug 2023 04:14:14 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+23:23:14.919 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:23:15.550 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:23:15.605 [main] INFO  com.intuit.karate - [print] created response is:  Auth_token: 
+23:23:15.793 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_4","password":"pass123"}
+
+23:23:16.258 [main] DEBUG com.intuit.karate - response time in milliseconds: 462
+1 < 200
+1 < Content-Type: application/json
+1 < X-Cloud-Trace-Context: fafcd476f0ac9ce1266dccdae1fa7d37
+1 < Date: Wed, 09 Aug 2023 04:23:15 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+23:23:16.277 [main] ERROR com.intuit.karate - classpath:usercases/feature/user.feature:14
+And match response contains jsonResponse1
+match failed: CONTAINS
+  $ | actual does not contain expected (STRING:STRING)
+  '""
+'
+  'Auth_token:'
+
+classpath:usercases/feature/user.feature:14
+23:23:16.294 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:23:16.299 [main] INFO  com.intuit.karate - [print] created exist is:  {
+  "errorMessage": "This user already exist."
+}
+ 
+23:23:16.301 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser","password":"pass123"}
+
+23:23:16.599 [main] DEBUG com.intuit.karate - response time in milliseconds: 298
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: c2f8d5310c7b831527a4f0a5dc4a047c
+1 < Date: Wed, 09 Aug 2023 04:23:15 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+23:23:16.610 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:23:16.617 [main] INFO  com.intuit.karate - [print] login response is:  Auth_token: 
+23:23:16.619 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123"}
+
+23:23:17.025 [main] DEBUG com.intuit.karate - response time in milliseconds: 406
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: bffd284ba20921199a1e00d30e703d34
+1 < Date: Wed, 09 Aug 2023 04:23:16 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+"Auth_token: dGVzdHVzZXJfMzE2OTIxNTQ="
+
+
+23:23:17.032 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:23:17.037 [main] INFO  com.intuit.karate - [print] login incorrect user response is:  {
+  "errorMessage": "User does not exist."
+}
+ 
+23:23:17.039 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 47
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_33","password":"pass123"}
+
+23:23:17.352 [main] DEBUG com.intuit.karate - response time in milliseconds: 313
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: ce64cb49d2426f96e1af8984d8fdddde
+1 < Date: Wed, 09 Aug 2023 04:23:16 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"User does not exist."}
+
+
+23:23:17.360 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:23:17.364 [main] INFO  com.intuit.karate - [print] login incorrect pass response is:  {
+  "errorMessage": "Wrong password."
+}
+ 
+23:23:17.365 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 49
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123456"}
+
+23:23:17.656 [main] DEBUG com.intuit.karate - response time in milliseconds: 290
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 3385eed10b3e8c0d01b37d7a7ce87921
+1 < Date: Wed, 09 Aug 2023 04:23:16 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+23:28:00.151 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:28:00.775 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:28:00.830 [main] INFO  com.intuit.karate - [print] created response is:   
+23:28:01.008 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_5","password":"pass123"}
+
+23:28:01.742 [main] DEBUG com.intuit.karate - response time in milliseconds: 732
+1 < 200
+1 < Content-Type: application/json
+1 < X-Cloud-Trace-Context: 0b7ab3ee9c77eab6c822229c6dd074f3;o=1
+1 < Date: Wed, 09 Aug 2023 04:28:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+23:28:01.770 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:28:01.773 [main] INFO  com.intuit.karate - [print] created exist is:  {
+  "errorMessage": "This user already exist."
+}
+ 
+23:28:01.776 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser","password":"pass123"}
+
+23:28:02.072 [main] DEBUG com.intuit.karate - response time in milliseconds: 296
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: d23a79026c116c6d47f6e4953e56a1c3
+1 < Date: Wed, 09 Aug 2023 04:28:01 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+23:28:02.085 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:28:02.091 [main] INFO  com.intuit.karate - [print] login response is:  Auth_token: 
+23:28:02.092 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123"}
+
+23:28:02.414 [main] DEBUG com.intuit.karate - response time in milliseconds: 321
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 54348228addb601a4ec727560bc6c3b9
+1 < Date: Wed, 09 Aug 2023 04:28:01 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+"Auth_token: dGVzdHVzZXJfMzE2OTIxNTU="
+
+
+23:28:02.422 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:28:02.427 [main] INFO  com.intuit.karate - [print] login incorrect user response is:  {
+  "errorMessage": "User does not exist."
+}
+ 
+23:28:02.430 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 47
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_33","password":"pass123"}
+
+23:28:02.710 [main] DEBUG com.intuit.karate - response time in milliseconds: 280
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: a02eca9dc40264ec6d81cd8250d72402
+1 < Date: Wed, 09 Aug 2023 04:28:01 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"User does not exist."}
+
+
+23:28:02.717 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:28:02.721 [main] INFO  com.intuit.karate - [print] login incorrect pass response is:  {
+  "errorMessage": "Wrong password."
+}
+ 
+23:28:02.722 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 49
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123456"}
+
+23:28:03.030 [main] DEBUG com.intuit.karate - response time in milliseconds: 307
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: c64698f71b1f62516f35459e031a6323
+1 < Date: Wed, 09 Aug 2023 04:28:02 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+20:38:56.601 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:38:57.371 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:38:57.437 [main] INFO  com.intuit.karate - [print] created response is:   
+20:38:57.793 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_6","password":"pass123"}
+
+20:38:58.404 [main] DEBUG com.intuit.karate - response time in milliseconds: 601
+1 < 200
+1 < Content-Type: application/json
+1 < X-Cloud-Trace-Context: 5585cd3a4f0e081c2ac48c2e17dd1e19;o=1
+1 < Date: Thu, 10 Aug 2023 01:38:58 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+20:38:58.430 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:38:58.435 [main] INFO  com.intuit.karate - [print] created exist is:  {
+  "errorMessage": "This user already exist."
+}
+ 
+20:38:58.437 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser","password":"pass123"}
+
+20:38:58.743 [main] DEBUG com.intuit.karate - response time in milliseconds: 304
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: bf372bc46e0dd841b2922e01cfdeee47
+1 < Date: Thu, 10 Aug 2023 01:38:58 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+20:38:58.758 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:38:58.764 [main] INFO  com.intuit.karate - [print] login response is:  Auth_token: 
+20:38:58.767 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123"}
+
+20:38:59.110 [main] DEBUG com.intuit.karate - response time in milliseconds: 341
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: f5407f716deac48a3fecc472ada32f9d
+1 < Date: Thu, 10 Aug 2023 01:38:58 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+"Auth_token: dGVzdHVzZXJfMzE2OTIyMzE="
+
+
+20:38:59.127 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:38:59.131 [main] INFO  com.intuit.karate - [print] login incorrect user response is:  {
+  "errorMessage": "User does not exist."
+}
+ 
+20:38:59.133 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 47
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_33","password":"pass123"}
+
+20:38:59.468 [main] DEBUG com.intuit.karate - response time in milliseconds: 333
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 624f0ae6ccdd238c141b7b03925fced9
+1 < Date: Thu, 10 Aug 2023 01:38:59 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"User does not exist."}
+
+
+20:38:59.481 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:38:59.485 [main] INFO  com.intuit.karate - [print] login incorrect pass response is:  {
+  "errorMessage": "Wrong password."
+}
+ 
+20:38:59.486 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 49
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_3","password":"pass123456"}
+
+20:38:59.807 [main] DEBUG com.intuit.karate - response time in milliseconds: 318
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 27385d4f1a333bdcbca3053d30344c33
+1 < Date: Thu, 10 Aug 2023 01:38:59 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+

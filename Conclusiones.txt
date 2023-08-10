@@ -1,0 +1,2 @@
+- Al crear usuarios no se los puede eliminar para las siguientes pruebas se debe modificar el nombre del usuario a crear.
+- Los escenarios identificados en el ambiente de pruebas se realizaron con satisfaccion en cada caso. 
